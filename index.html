@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="">
+        <title>BurgerSpot</title>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <!--Header Logo-->
+            <a href="">
+                <h1 class="logo">BurgerSpot</h1>
+            </a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <!--Header Menu-->
+                <ul id="menu" role="menu">
+                    <li><a id="item" href="" class="active">Início</a></li>
+                    <li><a id="item" href="#menu">Menu</a></li>
+                    <li><a id="item" href="#cardapio">Cardápio</a></li>
+                    <li><a id="item" href="#noticias">Notícias</a></li>
+                </ul>
+            </nav>
+            <!--Header Contact-->
+            <div class="header-contact">
+                <ion-icon name="call"></ion-icon>
+                <div class="header-contact-div">
+                    <h4>TELEFONE PARA CONTATO</h4>
+                    <h3>+55 0000 - 0000</h3>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--Main-->
+            <section class="main">
+                <!--Main Text-->
+                <div class="main-text">
+                    <h1 class="title">Conheça o BurgerSpot</h1>
+                    <p>Experimente a perfeição em forma de hambúrguer.</p>
+                    <h2>Peça 3, leve o 4º de <span>graça</span></h2>
+                    <a href="" class="btn">Pedir Agora</a>
+                </div>
+                <!--Main Image-->
+                <div class="main-img">
+                    <img src="assets/main-img.png" alt="main-img.png">
+                </div>
+            </section>
+
+            <!--Food-->
+            <section class="food">
+                <h1 class="title"></h1>
+                <!---->
+                <div class="">
+
+                </div>
+                <!---->
+                <div class="">
+
+                </div>
+            </section>
+
+            <!--BestSellers-->
+            <section class="bestseller">
+                <h1 class="title">Nossos Mais Vendidos</h1>
+                <!--BestSeller Section-->
+                <div class="bestseller-section">
+                    <!--Double Cheeseburger-->
+                    <div class="bestseller-section-container" id="bestsellerContainer">
+                        <button id="favoriteBtn" onclick="favorite(1)"><ion-icon class="heart-favorite" id="heartFavorite1" name="heart-outline"></ion-icon></button>
+                        <img src="assets/bestseller-img1.png" alt="bestseller-img1.png">
+                        <h1>Double Cheeseburger</h1>
+                        <p>Dupla camada de hambúrguer, queijo americano e bacon</p>
+                        <div class="bestseller-price">
+                            <h2>R$23.00</h2>
+                            <h2 class="discount">R$26.00</h2>
+                        </div>
+                        <button class="bestseller-btn" onclick="containerBg(this)">
+                            <ion-icon class="icon" name="cart-outline"></ion-icon>
+                            <h4 class="text">ADICIONAR AO CARRINHO</h4>
+                        </button>
+                    </div>
+                    <!--Classic Combo-->
+                    <div class="bestseller-section-container" id="bestsellerContainer">
+                        <button id="favoriteBtn" onclick="favorite(2)"><ion-icon class="heart-favorite" id="heartFavorite2" name="heart-outline"></ion-icon></button>
+                        <img src="assets/bestseller-img2.png" alt="bestseller-img2.png">
+                        <h1>Classic Combo</h1>
+                        <p>Classic Burger, batatas fritas e refrigerante</p>
+                        <div class="bestseller-price">
+                            <h2>R$26.00</h2>
+                        </div>    
+                        <button class="bestseller-btn" onclick="containerBg(this)">
+                            <ion-icon class="icon" name="cart-outline"></ion-icon>
+                            <h4 class="text">ADICIONAR AO CARRINHO</h4>
+                        </button>
+                    </div>
+                    <!--Bacon Explosion-->
+                    <div class="bestseller-section-container" id="bestsellerContainer">
+                        <button id="favoriteBtn" onclick="favorite(3)"><ion-icon class="heart-favorite" id="heartFavorite3" name="heart-outline"></ion-icon></button>
+                        <img src="assets/bestseller-img3.png" alt="bestseller-img3.png">
+                        <h1>Bacon Explosion</h1>
+                        <p>Hambúrguer, bacon crocante, queijo suíço e molho artesanal</p>
+                        <div class="bestseller-price">
+                            <h2>R$21.00</h2>
+                            <h2 class="discount">R$25.00</h2>
+                        </div>   
+                        <button class="bestseller-btn" onclick="containerBg(this)">
+                            <ion-icon class="icon" name="cart-outline"></ion-icon>
+                            <h4 class="text">ADICIONAR AO CARRINHO</h4>
+                        </button>
+                    </div>
+                    <!--Supreme BBQ Burger-->
+                    <div class="bestseller-section-container" id="bestsellerContainer">
+                        <button id="favoriteBtn" onclick="favorite(4)"><ion-icon class="heart-favorite" id="heartFavorite4" name="heart-outline"></ion-icon></button>
+                        <img src="assets/bestseller-img4.png" alt="bestseller-img4.png">
+                        <h1>Supreme BBQ Burger</h1>
+                        <p>Hambúrguer, queijo cheddar, cebola caramelizada e bacon</p>
+                        <div class="bestseller-price">
+                            <h2>R$22.00</h2>
+                        </div>    
+                        <button class="bestseller-btn" onclick="containerBg(this)">
+                            <ion-icon class="icon" name="cart-outline"></ion-icon>
+                            <h4 class="text">ADICIONAR AO CARRINHO</h4>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn" id="verTodosButton" onclick="verTodosProdutos()">VER TODOS OS PRODUTOS</button>
+            </section>
+
+            <!--Flyers-->
+            <section class="flyers">
+                <div class="flyers-div flyers-div-top">
+                    <img src="assets/flyers-img1.jpg" alt="">
+                    <img src="assets/flyers-img2.jpg" alt="">
+                </div>
+                <div class="flyers-div flyers-div-bot">
+                    <img src="assets/flyers-img3.jpg" alt="">
+                    <img src="assets/flyers-img4.jpg" alt="">
+                    <img src="assets/flyers-img5.jpg" alt="">
+                </div>
+            </section>
+
+            <!--Menu-->
+            <section class="menu">
+                <h1 class="title">Conheça Nosso Cardápio</h1>
+                <!--Menu Section-->
+                <div class="menu-section">
+                    <div class="menu-column">
+                        <!--Combos-->
+                        <div class="menu-info menu-info-combo">
+                            <h2>Combos</h2>
+                            <!--Classic Combo-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Classic Combo</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$26.00</h2>
+                                </div>
+                                <p>Classic Burger, batatas fritas e refrigerante</p>
+                            </div>
+                            <!--Cheese Lover Combo-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Cheese Lover Combo</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$30.50</h2>
+                                </div>
+                                <p>Double Cheeseburger, onion rings e milkshake</p>
+                            </div>
+                            <!--Veggie Combo-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Veggie Combo</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$28.00</h2>
+                                </div>
+                                <p>Veggie Delight, salada e limonada natural</p>
+                            </div>
+                            <!--Premium Combo-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Premium Combo</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$35.00</h2>
+                                </div>
+                                <p>Bacon Explosion, batatas rústicas e cerveja artesanal</p>
+                            </div>
+                        </div>
+                        <!--Snacks-->
+                        <div class="menu-info">
+                            <h2>Snacks</h2>
+                            <!--Crispy Chicken Tender-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Crispy Chicken Tender</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$15.00</h2>
+                                </div>
+                                <p>Tiras de frango crocantes com molho barbecue ou mostarda e mel</p>
+                            </div>
+                            <!--Nachos Supreme-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Nachos Supreme</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$13.50</h2>
+                                </div>
+                                <p>Nachos com queijo cheddar, guacamole e sour cream</p>
+                            </div>
+                            <!--Garden Salad-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Garden Salad</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$11.00</h2>
+                                </div>
+                                <p>Salada fresca com mix de folhas, tomate e molho</p>
+                            </div>
+                            <!--French Fries-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>French Fries</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$9.50</h2>
+                                </div>
+                                <p> Batatas fritas temperadas, com molho especial</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-column">
+                        <!--Burgers-->
+                        <div class="menu-info">
+                            <h2>Hambúrgueres</h2>
+                            <!--Classic Burger-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Classic Burger</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$18.00</h2>
+                                </div>
+                                <p>Hambúrguer de carne, queijo cheddar, alface e molho especial</p>
+                            </div>
+                            <!--Bacon Explosion-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Bacon Explosion</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$21.00</h2>
+                                </div>
+                                <p>Hambúrguer, bacon crocante, queijo suíço e molho artesanal</p>
+                            </div>
+                            <!--Veggie Delight-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Veggie Delight</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$19.50</h2>
+                                </div>
+                                <p>Hambúrguer de cogumelos, rúcula, abacate e queijo de cabra</p>
+                            </div>
+                            <!--Supreme BBQ Burger-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Supreme BBQ Burger</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$22.00</h2>
+                                </div>
+                                <p>Hambúrguer suculento, queijo cheddar, cebola caramelizada, bacon crocante e molho barbecue especial</p>
+                            </div>
+                            <!--Double Cheeseburger-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Double Cheeseburger</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$23.00</h2>
+                                </div>
+                                <p>Dupla camada de hambúrguer, queijo americano e bacon</p>
+                            </div>
+                        </div>
+                        <!--Drinks-->
+                        <div class="menu-info">
+                            <h2>Bebidas</h2>
+                            <!--Refrigerantes-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Refrigerantes</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$6.00</h2>
+                                </div>
+                                <p>Diversos sabores e marcas</p>
+                            </div>
+                            <!--Milkshakes-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Milkshakes</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$9.00</h2>
+                                </div>
+                                <p>Chocolate, baunilha, morango e cookies & cream</p>
+                            </div>
+                            <!--Cervejas Artesanais-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Cervejas Artesanais</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$13.00</h2>
+                                </div>
+                                <p>Opções locais e importadas</p>
+                            </div>
+                            <!--Limonadas Naturais-->
+                            <div class="menu-info-div">
+                                <div class="menu-div-txt">
+                                    <h4>Limonadas Naturais</h4>
+                                    <div class="menu-decLine"></div>
+                                    <h2 class="price">R$7.00</h2>
+                                </div>
+                                <p>Limão siciliano, morango, abacaxi e hortelã</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Feedback-->
+            <section class="feedback">
+                <h1 class="title">Depoimentos dos Clientes</h1>
+                <!--Slider-->
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <div class="slide first">
+                            <div class="slide-container">
+                                <p>"Fiquei encantada com a experiência na sua hamburgueria! Os hambúrgueres são simplesmente divinos, e o atendimento foi excepcional. Adorei a variedade de opções no menu e a atmosfera acolhedora do local. Com certeza voltarei em breve!"</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp1.png" alt="feedback-pp1.png">
+                                    <div class="slide-profile-div">
+                                        <h3>Marina Silva</h3>
+                                        <h4>marina.silva@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-container">
+                                <p>"Que lugar incrível! Os hambúrgueres da sua hamburgueria são verdadeiras obras de arte culinária. Cada mordida era uma explosão de sabores, e a combinação de ingredientes é surpreendente. A equipe foi super atenciosa e o ambiente é muito descontraído."</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp2.png" alt="feedback-pp2.png">
+                                    <div class="slide-profile-div">
+                                        <h3>Pedro Santos</h3>
+                                        <h4>pedro.santos@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-container">
+                                <p>"Simplesmente sensacional! Os hambúrgueres da sua hamburgueria são de outro mundo. A carne estava suculenta e os acompanhamentos eram perfeitamente equilibrados. Além disso, o ambiente é muito agradável, ideal para curtir uma refeição deliciosa com os amigos."</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp3.png" alt="feedback-pp3.png">
+                                    <div class="slide-profile-div">
+                                        <h3>João Carvalho</h3>
+                                        <h4>joao.carvalho@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-container">
+                                <p>"Tive uma experiência gastronômica incrível na sua hamburgueria. Os hambúrgueres são absolutamente deliciosos e a apresentação é impecável. A equipe foi super simpática e prestativa, tornando a minha visita ainda mais agradável. "</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp4.png" alt="feedback-pp4.png">
+                                    <div class="slide-profile-div">
+                                        <h3>Laura Oliveira</h3>
+                                        <h4>laura.oliveira@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-container">
+                                <p>"Fantástico! Os hambúrgueres são de alta qualidade e sabor inigualável. A criatividade na combinação de ingredientes é surpreendente, e o resultado é uma explosão de sabores a cada mordida. Estou impressionado com a dedicação ao detalhe e a atenção ao cliente. Voltarei com certeza!"</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp5.png" alt="feedback-pp5.png">
+                                    <div class="slide-profile-div">
+                                        <h3>Rafael Mendes</h3>
+                                        <h4>Rafael.mendes@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-container">
+                                <p>"Que achado maravilhoso! Os hambúrgueres da sua hamburgueria são uma verdadeira delícia. A variedade no cardápio é ótima, e há opções para todos os gostos, até mesmo para quem prefere alternativas vegetarianas."</p>
+                                <div class="slide-container-profile">
+                                    <img src="assets/feedback-pp6.png" alt="feedback-pp6.png">
+                                    <div class="slide-profile-div">
+                                        <h3>Ana Rodrigues</h3>
+                                        <h4>ana.rodrigues@email.com</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--News-->
+            <section class="news">
+                <h1 class="title">Últimas Notícias</h1>
+                <div class="news-section">
+                    <div class="news-section-container">
+                        <img src="assets/news-container-img1.png" alt="news-container-img1.png">
+                        <a href="#">Monte sua Combinação Perfeita Aqui</a>
+                        <p><span>PUBLICIDADE</span> / 13 de Agosto de 2023</p>
+                        <h4>Na BurgerSpot, a escolha é sua! Apresentamos nosso novo serviço de montagem de<span id="dots1">...</span><span id="more1"> hambúrguer personalizado. Agora você pode criar a combinação perfeita de ingredientes frescos e saborosos para saciar o seu paladar único. Venha e experimente uma refeição sob medida, do jeito que você gosta, somente na Delícia Burguer!</span></h4>
+                        <button onclick="readMore1()" id="readMoreBtn1">Leia Mais</button>
+                    </div>
+                    <div class="news-section-container">
+                        <img src="assets/news-container-img2.png" alt="news-container-img2.png">
+                        <a href="#">Nova Sensação Culinária da BurgerSpot</a>
+                        <p><span>NOTÍCIAS</span> / 13 de Agosto de 2023</p>
+                        <h4>A Delícia Burguer está abrindo as portas de sua cozinha e revelando os segredos por trás de<span id="dots2">...</span><span id="more2"> suas criações deliciosas. Com ingredientes exclusivos cuidadosamente selecionados, como o molho artesanal de pimenta defumada e a mistura secreta de temperos para nossos hambúrgueres, cada mordida se transforma em uma experiência culinária única.</span></h4>
+                        <button onclick="readMore2()" id="readMoreBtn2">Leia Mais</button>
+                    </div>
+                    <div class="news-section-container">
+                        <img src="assets/news-container-img3.png" alt="news-container-img3.png">
+                        <a href="#">Experimente Nosso Classic Combo</a>
+                        <p><span>NOVIDADES</span> / 13 de Agosto de 2023</p>
+                        <h4>Nós do BurgerSpot temos o prazer de apresentar o Classic Combo - uma combinação que vai<span id="dots3">...</span><span id="more3"> te transportar para a essência do hambúrguer perfeito! Este novo item do nosso menu combina o sabor suculento de nosso hambúrguer clássico com batatas fritas crocantes e um refrigerante refrescante, tudo por um preço irresistível.</span></h4>
+                        <button onclick="readMore3()" id="readMoreBtn3">Leia Mais</button>
+                    </div>
+                    <div class="news-section-container">
+                        <img src="assets/news-container-img4.png" alt="news-container-img4.png">
+                        <a href="#">Levamos o Sabor na Porta da Sua Casa</a>
+                        <p><span>PUBLICIDADE</span> / 13 de Agosto de 2023</p>
+                        <h4>Apresentamos nosso novo serviço de entregas, trazendo nossos hambúrgueres suculentos e<span id="dots4">...</span><span id="more4"> acompanhamentos deliciosos diretamente até você. Peça online pelo nosso site ou aplicativo de entregas e permita que nossos chefs cuidem do seu paladar.</span></h4>
+                        <button onclick="readMore4()" id="readMoreBtn4">Leia Mais</button>
+                    </div>
+                </div>
+            </section>
+
+            <!--Subscribe-->
+            <section class="subscribe">
+                <h1 class="title">Inscreva-se e receba <span>15%</span> de desconto</h1>
+                <p>Inscreva-se em nossa newsletter e receba conteúdos exclusivos diariamente.</p>
+                <form>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" placeholder="Digite seu email aqui" required>
+                    <button type="submit">INSCREVER-SE</button>
+                </form>
+                <p class="pp">Se inscrevendo, você aceita nossa <a href="#">Política de Privacidade</a></p>
+            </section>
+        </main>
+
+        <!--Script Reference-->
+        <script src="script.js"></script>
+
+        <!--Ion-icon Reference-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!--Footer-->
+        <footer>
+            <!--Footer Top-->
+            <div class="footer-top">
+                <!--Footer Contact-->
+                <div class="footer-contact footer-section">
+                    <h2>Entre em Contato</h2>
+                    <h3>+55 0000 - 0000</h3>
+                    <p>Rua dos Sabores, 123</p>
+                    <p>contact@burgerspot.com</p>
+                    <!--Footer Contact Social Medias-->
+                    <div class="footer-contact-sm">
+                        <a href="#">
+                            <span><ion-icon name="logo-facebook"></ion-icon></span>
+                        </a>
+                        <a href="#">
+                            <span><ion-icon name="logo-instagram"></ion-icon></span>
+                        </a>
+                        <a href="#">
+                            <span><ion-icon name="logo-twitter"></ion-icon></span>
+                        </a>
+                        <a href="#">
+                            <span><ion-icon name="logo-youtube"></ion-icon></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Footer Openning Hours-->
+                <div class="footer-open footer-section">
+                    <h2>Horários de Funcionamento</h2>
+                    <div class="footer-open-div">
+                        <p>Seg</p>
+                        <div class="open-decLine"></div>
+                        <p>Fechado</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Ter</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 23:00</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Qua</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 23:00</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Qui</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 23:00</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Sex</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 23:00</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Sab</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 01:00</p>
+                    </div>
+                    <div class="footer-open-div">
+                        <p>Dom</p>
+                        <div class="open-decLine"></div>
+                        <p>8:00 - 01:00</p>
+                    </div>
+                </div>
+
+                <!--Footer Information-->
+                <div class="footer-info footer-section">
+                    <h2>Informações</h2>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Endereços</a>
+                    <a href="#">FAQ</a>
+                </div>
+
+                <!--Footer Newsletter-->
+                <div class="footer-newsletter footer-section">
+                    <h2>Newsletter</h2>
+                    <p>Inscreva-se em nossa newsletter e receba conteúdos exclusivos diariamente.</p>
+                    <form>
+                        <input type="email" placeholder="Insira seu email" required>
+                        <button class="btn" type="submit">Inscrever-se</button>
+                    </form>
+                    <p class="pp">Se inscrevendo, você aceita nossa <a href="#">Política de Privacidade</a></p>
+                </div>
+            </div>
+
+            <!--Footer Copy-->
+            <div class="footer-copy">
+                <p>&copy; 2023 <span>BurguerSpot</span>. Todos os Direitos Reservados</p>
+            </div>
+        </footer>
+    </body>
+</html>
