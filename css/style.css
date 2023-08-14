@@ -184,33 +184,6 @@ header .header-contact-div h3 {
     padding-bottom: 75px;
 }
 
-/*BestSeller Container*/
-.bestseller-section .bestseller-section-container:hover {
-    background-image: url(../assets/bestseller-bg.png);
-    background-size: cover;
-    background-position: bottom center;
-}
-
-.bestseller-section-container:hover .heart-favorite {
-    color: #fff;
-}
-
-.bestseller-section-container:hover h1 {
-    color: #fff;
-}
-
-.bestseller-section-container:hover p {
-    color: #ffe1da;
-}
-
-.bestseller-section-container:hover .bestseller-price h2 {
-    color: #fff;
-}
-
-.bestseller-section-container:hover .bestseller-price .discount {
-    color: #ffe1da;
-}
-
 .bestseller-section-container #favoriteBtn {
     cursor: pointer;
     visibility: hidden;
@@ -823,6 +796,33 @@ footer .footer-contact h3 {
         color: #ffae2b;
     }
 
+    /*BestSeller*/
+    .bestseller-section .bestseller-section-container:hover {
+        background-image: url(../assets/bestseller-bg.png);
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+    .bestseller-section-container:hover .heart-favorite {
+        color: #fff;
+    }
+
+    .bestseller-section-container:hover h1 {
+        color: #fff;
+    }
+
+    .bestseller-section-container:hover p {
+        color: #ffe1da;
+    }
+
+    .bestseller-section-container:hover .bestseller-price h2 {
+        color: #fff;
+    }
+
+    .bestseller-section-container:hover .bestseller-price .discount {
+        color: #ffe1da;
+    }
+
     /*Footer*/
     .footer-contact-sm ion-icon:hover {
         background-color: #ffae2b;
@@ -856,7 +856,7 @@ footer .footer-contact h3 {
         padding: 1rem;
         display: flex;
         align-items: center;
-        background-color: #fff;
+        background-color: #ae3216;
         justify-content: space-between;
     }
 
@@ -864,7 +864,7 @@ footer .footer-contact h3 {
         width: 150px;
     }
 
-    header .btn {
+    header .header-contact {
         display: none;
     }
 
@@ -875,8 +875,7 @@ footer .footer-contact h3 {
         top: 70px;
         right: 0;
         left: 0;
-        background: #fff;
-        border-top: 0.4px solid #878a8f;
+        background: #ae3216;
         transition: 0.6s;
         z-index: 10000;
         height: 0;
@@ -892,15 +891,17 @@ footer .footer-contact h3 {
 
     header #menu #item {
         display: block;
+        font-size: 18px;
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 0.4px solid #878a8f;
+        border-bottom: 0.4px solid #fff;
     }
 
     header #btn-mobile {
-        color: #000;
+        color: #fff;
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
+        align-items: center;
     }
 
     #btn-mobile {
@@ -915,6 +916,7 @@ footer .footer-contact h3 {
 
     #hamburger {
         border-top: 2px solid;
+        color: #fff;
         width: 20px;
     }
 
@@ -941,5 +943,185 @@ footer .footer-contact h3 {
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    /*All*/
+    .title {
+        text-align: center;
+        font-size: 42px;
+    }
+
+    /*Main*/
+    .main {
+        padding: 28px;
+        padding-bottom: 120px;
+        min-height: auto;
+    }
+
+    .main .main-img {
+        display: none;
+    }
+
+    .main .title {
+        text-align: left;
+        font-size: 80px;
+    }
+
+    /*Bestsellers*/
+    .bestseller .bestseller-section {
+        flex-direction: column;
+    }
+
+    .bestseller-section .bestseller-section-container {
+        padding: 20px;
+    }
+
+    .bestseller-section-container img {
+        width: 100%;
+    }
+
+    /*Flyers*/
+    .flyers {
+        padding: 28px;
+        margin-top: 28px;
+    }
+
+    .flyers .flyers-div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .flyers .flyers-div img {
+        width: 100%;
+    }
+
+    /*Menu*/
+    .menu {
+        padding: 180px 28px;
+    }
+
+    .menu-section {
+        flex-direction: column;
+    }
+
+    .menu-info .menu-info-div {
+        width: 100%;
+    }
+
+    /*Feedback*/
+    .feedback {
+        padding: 28px;
+    }
+
+    .feedback .slider {
+        width: 100%;
+        height: 600px;
+    }
+    
+    .feedback .slides {
+        width: 300%;
+        height: 600px;
+    }
+    
+    /*Feedback Slide*/
+    .feedback .slide {
+        height: 100%;
+        flex-direction: column;
+        gap: 28px;
+        padding: 10px;
+    }
+    
+    .feedback .slide-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 450px;
+        background-color: #ffe1da;
+        border-radius: 10px;
+        padding: 25px 40px;
+        gap: 20px;
+    }
+    
+    .feedback .slide-container p {
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .feedback .slide-container-profile {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .feedback .slide-container-profile img {
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .feedback .slide-profile-div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feedback .slide-profile-div h3 {
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+    .feedback .slide-profile-div h4 {
+        font-weight: 300;
+        font-size: 10px;
+    }
+    
+    .feedback .navigation-auto {
+        width: 85%;
+        margin-top: 700px;
+    }
+
+    /*News*/
+    .news .news-section {
+        flex-direction: column;
+    }
+
+    /*Subscribe*/
+    .subscribe {
+        padding: 28px;
+    }
+
+    .subscribe p {
+        text-align: center;
+    }
+
+    .subscribe form {
+        width: 100%;
+    }
+
+    .subscribe form ion-icon {
+        font-size: 30px;
+    }
+
+    .subscribe form button {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /*Footer*/
+    footer {
+        padding: 28px;
+        padding-top: 120px;
+    }
+
+    footer .footer-top {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    footer .footer-top .footer-section {
+        width: 100%;
+    }
+
+    footer .footer-copy {
+        margin-top: 7px;
     }
 }
