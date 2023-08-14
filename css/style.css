@@ -550,10 +550,6 @@ header .header-contact-div h3 {
     padding-bottom: 3px;
 }
 
-.news-section-container a:hover {
-    text-decoration: underline;
-}
-
 .news-section-container p {
     font-size: 12px;
     color: #6a6a6a;
@@ -821,6 +817,11 @@ footer .footer-contact h3 {
 
     .bestseller-section-container:hover .bestseller-price .discount {
         color: #ffe1da;
+    }
+
+    /*News*/    
+    .news-section-container a:hover {
+        text-decoration: underline;
     }
 
     /*Footer*/
